@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+
+}
+
+
+body {
+  background-color: black; 
+  min-width: 480px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+  color: white;
+  border-bottom: 1px solid white;
+  box-sizing: border-box; /* Pour inclure le padding dans la taille totale du header */
+  min-height: 10vh; 
+  min-width: 480px;
+}
+
+
+.title-portfolio > a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.nav-header {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-header a {
+  text-decoration: none;
+  color: white; 
+}
+
+.presentation {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  color: white; 
+  border-bottom: 1px solid white;
+
+}
+
+.background-image-presentation {
+  width: 100%; 
+  height: 75vh;
+  display: block;
+  object-fit: cover; /* Pour bien couvrir toute la zone */
+}
+
+.oval {
+  position: absolute;
+  top: 50%; /* Centre verticalement */
+  left: 25%; /* Place l'image à 25% du conteneur horizontalement */
+  width: 200px;  /* Largeur de l'image ovale */
+  height: 300px; /* Hauteur de l'image ovale */
+  border-radius: 50%; /* Forme ovale */
+  transform: translate(-50%, -50%); /* Ajuste l'image pour qu'elle soit bien centrée par rapport à son point d'ancrage */
+  object-fit: cover; /* Ajuste l'image pour bien la couvrir dans l'ovale */
+}
+
+
+.text-presentation {
+  position: absolute;
+  top: 50%; /* Centre verticalement */
+  right: 15%; /* Place le texte tout à droite du conteneur */  
+  transform: translateY(-50%); /* Centre verticalement le texte */
+  width: 30%; /* Le texte occupe 30% de la largeur totale du conteneur */
+  font-size: 18px; /* Taille du texte */
+  color: white; /* Couleur du texte */
+  text-align: justify; /* Justifie le texte */
+  padding: 10px; /* Ajoute de l'espace autour du texte */
+  box-sizing: border-box; /* Le padding ne dépasse pas la largeur totale */
+} 
+
+
+.text-presentation > h3{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+  .text-presentation {
+    width: 50%; /* Le texte occupe plus d'espace sur petits écrans */
+    right: 5%; /* Rapproche encore plus le texte du bord droit */
+    font-size: 1rem; /* Réduit la taille du texte */
+  }
+  
+  header{
+    padding:10px;
+  }
+
+  h1{
+    margin: 0;
+    font-size: 1.25em;
+  }
+
+  h2{
+    font-size: 1em;
+  }
+
+  .bouton-header > a > h3{
+    font-size: 0.85em;
+  }
+  
+  .nav-header {
+    gap: 10px; /* Réduit l'espacement entre les boutons */
+  }
+
+
+}
+
+
+.etudes-index {
+  border-bottom: 1px solid white;
+}
+
+h2{
+  text-align: center;
+  padding: 10px;
+  color: white; /* Assure que les titres d'études sont blancs */
+}
+
+.etude-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.formation-txt {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  flex: 1;
+  padding-right: 40px; /* Ajuste la distance entre le texte et le rond */
+}
+
+
+.timeline {
+  margin: 50px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50px; /* Place la ligne à la position du marqueur */
+  width: 2px;
+  background-color: white; /* Couleur de la ligne */
+  z-index: 0;
+}
+
+
+.timeline-marker {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 20px;
+}
+
+.formation-date {
+  font-size: 14px;
+  text-align: left;
+  flex: 1;
+  padding-left: 40px; /* Ajuste la distance entre le rond et la date */
+}
+
+
+
+.index-images {
+  display: flex;
+  justify-content: center; /* Centrer les images dans la div parent */
+  align-items: center; /* Centrer verticalement si nécessaire */
+  width: 100%; /* La div parent prend toute la largeur */
+}
+
+.index-image {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.index-image-title {
+  text-align: center;
+}
+
+
+.centre-dinteret {
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 20px 0;
+}
+
+
+
+
+
+
+.centre-dinteret-images {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.image-vertical-centre-dinteret,
+.image-horizontal-centre-dinteret {
+  flex: 1; 
+  margin: 0 15px; 
+}
+
+.image-vertical-centre-dinteret img,
+.image-horizontal-centre-dinteret img {
+  width: 100%; 
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.image-vertical-centre-dinteret img{
+  height: 200px;
+}
+
+.image-horizontal-centre-dinteret img {
+  height: 150px;
+}
+
+
+
+
+
+
+
+/* Style pour le formulaire de contact */
+.contact-form {
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 20px auto; /* Centrer le formulaire horizontalement */
+  padding: 20px; /* Espacement interne */
+  border: 1px solid #ccc; /* Bordure légère autour du formulaire */
+  border-radius: 8px; /* Coins arrondis */
+  background-color: #1c1c1c; /* Fond du formulaire */
+  color: white; /* Couleur du texte */
+}
+
+/* Style pour les lignes de formulaire */
+.form-row {
+  display: flex; /* Utiliser Flexbox pour la disposition */
+  justify-content: flex-start; /* Commencer à gauche */
+  margin-bottom: 15px; /* Espacement entre les lignes */
+}
+
+/* Style pour chaque groupe de formulaire */
+.form-group {
+  flex: 1; /* Les groupes de formulaire occupent également l'espace */
+  margin-bottom: 15px;
+}
+
+/* Ajouter un espace de 20px entre Prénom et Nom */
+.form-row .form-group:first-child {
+  margin-right: 20px; /* Espace de 20px après le prénom */
+}
+
+/* Supprimer la marge à droite du dernier groupe dans la ligne */
+.form-row .form-group:last-child {
+  margin-right: 0; /* Aucun espace pour le dernier groupe */
+}
+
+/* Style pour les labels */
+label {
+  display: block; /* Les labels occupent toute la largeur */
+  margin-bottom: 5px; /* Espacement sous le label */
+  font-weight: bold; /* Met le texte du label en gras */
+  font-size: 16px; /* Taille uniforme des labels */
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Largeur de 100% */
+  border: none; /* Pas de bordure par défaut */
+  border-bottom: 2px solid white; /* Bordure inférieure blanche */
+  background-color: transparent; /* Fond transparent */
+  color: white; /* Couleur du texte */
+  font-size: 16px; /* Taille de police uniforme */
+  transition: border-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+
+#label-message{
+  margin-bottom: 15px;
+}
+
+/* Hauteur uniforme pour tous les champs */
+input[type="text"],
+input[type="email"] {
+  height: 40px; /* Hauteur uniforme */
+}
+
+/* Style pour le champ de texte (textarea) */
+textarea {
+  resize: vertical; /* Permet de redimensionner verticalement uniquement */
+  min-height: 100px; /* Hauteur minimale pour textarea */
+}
+
+/* Style pour les champs lors du focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none; /* Retire le contour par défaut */
+
+  border-bottom: 1px solid white; /* Change la couleur de la bordure lors du focus */
+}
+
+/* Style pour le bouton d'envoi */
+button {
+  background-color: white; /* Couleur du bouton */
+  color: black; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  border: none; /* Pas de bordure */
+  border-radius: 20px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en main */
+  font-size: 16px; /* Taille de police */
+  transition: background-color 0.3s; /* Transition pour l'effet de survol */
+
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end; /* Aligner le bouton à droite */
+}
+
+footer{
+  display: flex;
+  flex-direction:column ;
+  align-items:center;
+  justify-content: center;
+  border-top: 1px solid white;
+}
+
+
+footer > p, footer > h3{
+  margin: 10px;
+}
+
