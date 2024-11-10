@@ -16,7 +16,6 @@ export default function Header() {
         <BoutonHeader txt="ETUDES" link="/etudes" />
         <BoutonHeader txt="COMPETENCES" link="/competences" />
         <BoutonHeader txt="PROJETS" link="/projets" />
-        {/* Lien qui défile vers le formulaire de contact */}
         <BoutonHeader txt="CONTACT" link="#contact" />
       </nav>
     </header>

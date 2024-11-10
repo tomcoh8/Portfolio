@@ -1,4 +1,3 @@
-// BoutonHeader.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';  // Toujours pour les autres liens internes
 
@@ -8,7 +7,6 @@ export default function BoutonHeader({txt, link}) {
 
   return (
     <div className="bouton-header">
-      {/* Si c'est une ancre, utiliser <a> classique */}
       {isAnchor ? (
         <a href={link}>
           <h3>{txt}</h3>
