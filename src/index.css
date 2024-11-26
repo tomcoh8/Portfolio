@@ -20,7 +20,8 @@ header {
   color: white;
   border-bottom: 1px solid white;
   box-sizing: border-box; /* Pour inclure le padding dans la taille totale du header */
-  min-height: 10vh; 
+  min-height: 50px; 
+  height: 8vh; 
   min-width: 480px;
 }
 
@@ -47,12 +48,14 @@ header {
   overflow: hidden;
   color: white; 
   border-bottom: 1px solid white;
-
+  min-height: 500px;
+  height: 60vh;
 }
 
 .background-image-presentation {
   width: 100%; 
-  height: 75vh;
+  min-height: 500px;
+  height: 60vh;
   display: block;
   object-fit: cover; /* Pour bien couvrir toute la zone */
 }
@@ -122,11 +125,13 @@ header {
 
 .etudes-index {
   border-bottom: 1px solid white;
+  min-height: 300px;
+  height: 30vh;      
 }
 
 h2{
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   color: white; /* Assure que les titres d'études sont blancs */
 }
 
@@ -206,7 +211,8 @@ h2{
 .centre-dinteret {
   text-align: center;
   border-bottom: 1px solid white;
-  padding: 20px 0;
+  min-height: 300px; 
+  height: 30vh; 
 }
 
 
@@ -218,7 +224,8 @@ h2{
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  width: 100%;
+  width: 100%;     
+  height: auto; 
 }
 
 
@@ -244,16 +251,14 @@ h2{
   height: 150px;
 }
 
+#contact{
 
-
-
-
-
+}
 
 /* Style pour le formulaire de contact */
 .contact-form {
   max-width: 600px; /* Largeur maximale du formulaire */
-  margin: 20px auto; /* Centrer le formulaire horizontalement */
+  margin: 30px auto 50px auto; /* Centrer le formulaire horizontalement */
   padding: 20px; /* Espacement interne */
   border: 1px solid #ccc; /* Bordure légère autour du formulaire */
   border-radius: 8px; /* Coins arrondis */
@@ -349,6 +354,64 @@ button {
   justify-content: flex-end; /* Aligner le bouton à droite */
 }
 
+
+/* Page Etudes */
+
+#photo-etudes {
+  width: 200px; /* Largeur du cercle */
+  height: 200px; /* Hauteur du cercle */
+  border-radius: 50%; /* Rend l'élément circulaire */
+  background-color: #3498db; /* Couleur de fond du cercle */
+  display: flex; /* Utilisé si vous voulez centrer du contenu à l'intérieur */
+  justify-content: center; /* Centre horizontalement le contenu */
+  align-items: center; /* Centre verticalement le contenu */
+  margin: 20px auto; /* Centre l'élément sur la page */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
   display: flex;
   flex-direction:column ;
@@ -361,4 +424,7 @@ footer{
 footer > p, footer > h3{
   margin: 10px;
 }
+
+
+
 

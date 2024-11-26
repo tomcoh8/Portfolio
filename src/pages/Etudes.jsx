@@ -4,7 +4,8 @@ import Contact from '../components/Contact';
 function Etudes() {
   return (
     <div>
-      <Contact />
+      <img id="photo-etudes" src="../../poulet2.webp" alt="" />
+      <h2>QUELQUES PRÉCISIONS SUR MES ÉTUDES</h2>
     </div>
   );
 }
