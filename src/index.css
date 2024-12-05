@@ -425,6 +425,64 @@ footer > p, footer > h3{
   margin: 10px;
 }
 
+#projets-button{
+  text-align: center;
+  margin: 10px;
+}
+
+#projets-button > button{
+  margin: 5px;
+}
+
+#projets-button > button > a{
+  color: black;
+  text-decoration: none;
+}
+
+.projets-section > h1{
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid white;
+
+}
+
+.projet-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  gap: 20px; /* Espace entre l'image et le texte */
+  padding: 20px;
+}
+
+.text-container {
+  flex: 1; /* Prend l'espace disponible */
+}
+
+.text-container > h3 {
+  text-align: center; /* Prend l'espace disponible */
+}
+.image-container {
+  flex: 1; /* Prend l'espace disponible */
+  display: flex;
+  flex-direction: column; /* Permet d'empiler l'image et le bouton */
+  align-items: center; /* Centre l'image et le bouton horizontalement */
+}
+
+.image-container img {
+  max-width: 100%; /* S'assure que l'image ne dépasse pas son conteneur */
+  height: auto; /* Garde les proportions de l'image */
+  object-fit: cover; /* Ajuste l'image si nécessaire */
+  margin-bottom: 10px; /* Ajoute un espace entre l'image et le bouton */
+}
 
 
 
+.image-container > button > a{
+  text-decoration: none;
+  color: white; /* Couleur du texte dans le bouton */
+}
+
+.image-container:hover {
+  background-color: #0056b3; /* Couleur au survol */
+}
