@@ -1,41 +1,20 @@
 import React from 'react';
-import ProjetButton from '../components/ProjetButton';
-import ProjetDetail from '../components/ProjetDetail';
 
-
-function Projets() {
+function CentreDinteret2() {
   return (
-    <div>
-      <ProjetButton />
-      <div id="annee1" className='projets-section'>
-        <h1>1ère année</h1>
-        <ProjetDetail title="Projet 1" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 2" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 3" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 4" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 5" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 6" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-      </div>
-      <div id="annee2" className='projets-section'>
-        <h1>2ème année</h1>
-        <ProjetDetail title="Projet 1" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 2" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 3" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 4" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 5" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 6" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-      </div>
-      <div id="annee3" className='projets-section'>
-        <h1>3ème année</h1>
-        <ProjetDetail title="Projet 1" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 2" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 3" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 4" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 5" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
-        <ProjetDetail title="Projet 6" txt="Dans ce projet, j'avais pour but de réaliser un jeu de Puissance 4 en langage C, qui se joue entièrement dans le terminal en utilisant les touches du clavier. Malgré les difficultés rencontrés en cours de route, j'ai réussi à terminer ce projet avec succès, ce qui m'a permis de consolider mes connaissances en C et de développer mes compétences en développement de jeux." img="../../poulet2.webp"/>
+    <div className='page-centre-dinteret'>
+      <h1>Mangas / Animés</h1>
+      <div className='centre-dinteret-text'>
+        <p>​
+          J'adore les mangas et les animes pour plusieurs raisons. Tout d'abord, ces formes d'art japonaises sont incroyablement créatives et innovantes. Les mangas me captivent avec leurs histoires complexes, leurs personnages bien développés et leurs univers imaginatifs. Les animes, quant à eux, donnent vie à ces histoires grâce à leur animation époustouflante, leurs bandes sonores envoûtantes et leur capacité à transmettre des émotions intenses.
+
+          De plus, les mangas et les animes abordent souvent des thèmes profonds et universels tels que l'amitié, l'amour, la lutte contre l'adversité et la quête de soi. Ils peuvent nous faire réfléchir, remettre en question nos convictions et nous pousser à nous interroger sur des sujets importants. Enfin, les mangas et les animes ont une communauté passionnée et dynamique. C'est un plaisir de pouvoir partager mes découvertes, discuter et échanger avec d'autres fans du monde entier. Cette passion commune crée un sentiment d'appartenance et de camaraderie qui est tout simplement merveilleux. 
+
+          En résumé, j'aime les mangas et les animes pour leur créativité, leurs histoires captivantes, leur capacité à transmettre des émotions, leur diversité et la communauté passionnée qui les entoure. Ils occupent une place spéciale dans mon cœur et m'apportent une joie inégalée.
+        </p>
       </div>
     </div>
   );
 }
 
-export default Projets;
+export default CentreDinteret2;
