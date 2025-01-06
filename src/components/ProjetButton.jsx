@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function ProjetButton({img, txt}) {
+export default function ProjetButton() {
   return (
   <div>
       <div id="projets-button">

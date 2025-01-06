@@ -1,13 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
-
 }
 
 
 body {
-  background-color: black; 
+  background-color: #E6DACE;
   min-width: 480px;
   margin: 0;
 }
@@ -17,18 +15,21 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px; 
-  color: white;
   border-bottom: 1px solid white;
   box-sizing: border-box; /* Pour inclure le padding dans la taille totale du header */
   min-height: 50px; 
   height: 8vh; 
   min-width: 480px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
 }
 
 
 .title-portfolio > a {
   text-decoration: none;
-  color: white;
+  color: #000;
 }
 
 
@@ -39,14 +40,16 @@ header {
 
 .nav-header a {
   text-decoration: none;
-  color: white; 
+  color: #000; 
 }
 
 .presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   overflow: hidden;
-  color: white; 
   border-bottom: 1px solid white;
   min-height: 500px;
   height: 60vh;
@@ -60,29 +63,60 @@ header {
   object-fit: cover; /* Pour bien couvrir toute la zone */
 }
 
-.oval {
-  position: absolute;
-  top: 50%; /* Centre verticalement */
-  left: 25%; /* Place l'image à 25% du conteneur horizontalement */
-  width: 200px;  /* Largeur de l'image ovale */
-  height: 300px; /* Hauteur de l'image ovale */
-  border-radius: 50%; /* Forme ovale */
-  transform: translate(-50%, -50%); /* Ajuste l'image pour qu'elle soit bien centrée par rapport à son point d'ancrage */
-  object-fit: cover; /* Ajuste l'image pour bien la couvrir dans l'ovale */
+
+.presentation > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #E6DACE;
+  width: 75%;
+  height: 75%;
+  border-radius: 20px;
 }
 
+#presentation-image {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement */
+  justify-content: flex-start; /* Aligne les éléments au début (en haut) */
+  align-items: center; /* Centre l'image horizontalement */
+  background-color: #F4ECE6;
+  width: 20%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.oval {
+  width: 200px;  /* Largeur de l'image ovale */
+  height: 200px; /* Hauteur de l'image ovale */
+  border-radius: 100%; /* Forme ovale */
+  margin-top: 20px;
+}
+
+#name {
+  margin-top: 20px;
+  text-align: center; 
+}
+
+#reseaux-sociaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: auto; /* Pousse le texte vers le bas du conteneur */
+  background-color: white; /* Texte en blanc */
+  text-align: center; /* Centrer le texte */
+}
+
+#reseaux-sociaux > img{
+  margin: 10px 15px 10px 0;
+}
 
 .text-presentation {
-  position: absolute;
-  top: 50%; /* Centre verticalement */
-  right: 15%; /* Place le texte tout à droite du conteneur */  
-  transform: translateY(-50%); /* Centre verticalement le texte */
   width: 30%; /* Le texte occupe 30% de la largeur totale du conteneur */
   font-size: 18px; /* Taille du texte */
-  color: white; /* Couleur du texte */
   text-align: justify; /* Justifie le texte */
   padding: 10px; /* Ajoute de l'espace autour du texte */
-  box-sizing: border-box; /* Le padding ne dépasse pas la largeur totale */
 } 
 
 
@@ -139,7 +173,6 @@ header {
 h2{
   text-align: center;
   padding: 15px;
-  color: white; /* Assure que les titres d'études sont blancs */
 }
 
 .etude-content {
@@ -148,6 +181,26 @@ h2{
   margin-bottom: 40px;
   width: 100%;
   position: relative;
+}
+
+.page-etude-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.etude-title > h5{
+  text-align: center;
+  margin: 10px 0 10px 0;
+
+}
+
+.page-etude-content > p{
+  text-align: justify;
+  max-width: 800px;
 }
 
 .formation-txt {
@@ -216,26 +269,31 @@ h2{
 
 
 .centre-dinteret {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
   text-align: center;
-  border-bottom: 1px solid white;
   min-height: 300px; 
   height: 30vh; 
 }
 
+.centre-dinteret h2 {
 
+}
 
 .centre-dinteret-images {
   display: flex;
-  justify-content: space-between; 
+  justify-content: center; 
   align-items: center;
-  width: 100%;     
-  height: auto; 
+  width: 100%;  
+  padding-bottom: 15px;   
 }
-
-
 
 .image-vertical-centre-dinteret,
 .image-horizontal-centre-dinteret {
+  background-color: #F4ECE6;
   flex: 1; 
   margin: 0 15px; 
 }
@@ -247,13 +305,15 @@ h2{
   border: 2px solid white;
 }
 
-.image-vertical-centre-dinteret img{
+.image-vertical-centre-dinteret img {
   height: 200px;
 }
 
 .image-horizontal-centre-dinteret img {
   height: 150px;
 }
+
+
 
 #contact{
   display: flex;
@@ -270,7 +330,7 @@ h2{
   margin-right: 100px;
 }
 
-#infos-contact > p, a{
+#infos-contact > p, #infos-contact > a{
   margin-bottom: 30px;
   font-size: 20px;
   text-decoration: none;
@@ -278,6 +338,7 @@ h2{
 
 /* Style pour le formulaire de contact */
 .contact-form {
+  width: 100%;
   max-width: 600px; /* Largeur maximale du formulaire */
   margin: 30px auto 50px auto; /* Centrer le formulaire horizontalement */
   padding: 20px; /* Espacement interne */

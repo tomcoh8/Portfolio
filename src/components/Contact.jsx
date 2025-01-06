@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div>
+    <div id='all-contact'>
       <h2>CONTACTEZ-MOI</h2>
 
       <div id="contact">

@@ -10,6 +10,7 @@ import CentreDinteret1 from './pages/CentreDinteret1';
 import CentreDinteret2 from './pages/CentreDinteret2';
 import CentreDinteret3 from './pages/CentreDinteret3';
 import CentreDinteret4 from './pages/CentreDinteret4';
+import PageContact from './pages/PageContact'; // Page complète contenant le composant Contact
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/CentreDinteret2" element={<CentreDinteret2 />} />
         <Route path="/CentreDinteret3" element={<CentreDinteret3 />} />
         <Route path="/CentreDinteret4" element={<CentreDinteret4 />} />
+        <Route path="/Contact" element={<PageContact />} />
 
       </Routes>
       <Footer />
