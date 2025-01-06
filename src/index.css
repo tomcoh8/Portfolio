@@ -233,7 +233,6 @@ h2{
 }
 
 
-
 .image-vertical-centre-dinteret,
 .image-horizontal-centre-dinteret {
   flex: 1; 
@@ -262,15 +261,19 @@ h2{
   align-items: center;
 }
 
+#contactez-moi{
+  margin: 0 50px 0 50px;
+}
+
 #infos-contact{
   display: flex; /* Utiliser Flexbox pour la disposition */
   flex-direction: column;
   justify-content: center; /* Commencer à gauche */
   align-items: flex-start;
-  margin-right: 100px;
+  margin: 0 50px 0 50px;
 }
 
-#infos-contact > p, a{
+#infos-contact > p, #infos-contact > a{
   margin-bottom: 30px;
   font-size: 20px;
   text-decoration: none;
