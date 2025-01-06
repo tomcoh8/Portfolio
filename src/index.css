@@ -291,6 +291,10 @@ h2{
   padding-bottom: 15px;   
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> be85e5fdba06ea1f1e3e6567fea791778a09cf56
 .image-vertical-centre-dinteret,
 .image-horizontal-centre-dinteret {
   background-color: #F4ECE6;
@@ -322,12 +326,16 @@ h2{
   align-items: center;
 }
 
+#contactez-moi{
+  margin: 0 50px 0 50px;
+}
+
 #infos-contact{
   display: flex; /* Utiliser Flexbox pour la disposition */
   flex-direction: column;
   justify-content: center; /* Commencer à gauche */
   align-items: flex-start;
-  margin-right: 100px;
+  margin: 0 50px 0 50px;
 }
 
 #infos-contact > p, #infos-contact > a{
