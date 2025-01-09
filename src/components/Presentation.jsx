@@ -7,7 +7,7 @@ export default function Presentation() {
         <div id='presentation-image'>
           <img className="oval" src="../../image_moi.jpg" alt="moi" />
           <h3 id='name'>Tom Cohéléach</h3>
-          <p>développeur alternant</p>
+          <p id='metier'>développeur alternant</p>
           <div id='reseaux-sociaux'>
             <img src="../../logo linkedin.png" alt="" width="30vh"/>
             <img src="../../logo-cv.png" alt="" width="30vh"/>

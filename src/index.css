@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+:root {
+  --shd: -11.31px 11.31px 25px 0px rgba(138, 131, 124, 0.23);
+}
+
 
 body {
   background-color: #E6DACE;
@@ -17,8 +21,7 @@ header {
   padding: 20px; 
   border-bottom: 1px solid white;
   box-sizing: border-box; /* Pour inclure le padding dans la taille totale du header */
-  min-height: 50px; 
-  height: 8vh; 
+  height: 10vh; 
   min-width: 480px;
   position: sticky;
   top: 0;
@@ -51,8 +54,7 @@ header {
   width: 100%;
   overflow: hidden;
   border-bottom: 1px solid white;
-  min-height: 500px;
-  height: 60vh;
+  height: 90vh;
 }
 
 .background-image-presentation {
@@ -86,8 +88,8 @@ header {
 }
 
 .oval {
-  width: 200px;  /* Largeur de l'image ovale */
-  height: 200px; /* Hauteur de l'image ovale */
+  width: 150px;  /* Largeur de l'image ovale */
+  height: 150px; /* Hauteur de l'image ovale */
   border-radius: 100%; /* Forme ovale */
   margin-top: 20px;
 }
@@ -95,6 +97,10 @@ header {
 #name {
   margin-top: 20px;
   text-align: center; 
+}
+
+#metier{
+  text-align: center;
 }
 
 #reseaux-sociaux {
@@ -125,38 +131,6 @@ header {
   text-align: center;
 }
 
-@media screen and (max-width:1024px) {
-  .text-presentation {
-    width: 50%; /* Le texte occupe plus d'espace sur petits écrans */
-    right: 5%; /* Rapproche encore plus le texte du bord droit */
-    font-size: 1rem; /* Réduit la taille du texte */
-  }
-  
-  header{
-    padding:10px;
-  }
-
-  h1{
-    margin: 0;
-    font-size: 1.25em;
-  }
-
-  h2{
-    font-size: 1em;
-  }
-
-  .bouton-header > a > h3{
-    font-size: 0.85em;
-  }
-  
-  .nav-header {
-    gap: 10px; /* Réduit l'espacement entre les boutons */
-  }
-
-
-}
-
-
 .etudes-index {
   display: flex;
   justify-content: center;
@@ -183,14 +157,7 @@ h2{
   position: relative;
 }
 
-.page-etude-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-  width: 100%;
-  position: relative;
-}
+
 
 .etude-title > h5{
   text-align: center;
@@ -198,9 +165,28 @@ h2{
 
 }
 
+#page-etude{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-etude-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 50%;
+  position: relative;
+  background-color: #F4ECE6;
+  padding: 20px 10px 20px 10px;
+  border-radius: 20px;
+}
+
 .page-etude-content > p{
   text-align: justify;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .formation-txt {
@@ -275,48 +261,41 @@ h2{
   flex-direction: column;
   background-color: white;
   text-align: center;
-  min-height: 300px; 
-  height: 30vh; 
 }
 
-.centre-dinteret h2 {
-
-}
 
 .centre-dinteret-images {
   display: flex;
   justify-content: center; 
   align-items: center;
-  width: 100%;  
+  width: 100%;
   padding-bottom: 15px;   
 }
 
-<<<<<<< HEAD
-=======
+.centre-dinteret-images > a{
+  text-decoration: none;
+}
 
->>>>>>> be85e5fdba06ea1f1e3e6567fea791778a09cf56
-.image-vertical-centre-dinteret,
-.image-horizontal-centre-dinteret {
+
+.image-vertical-centre-dinteret {
   background-color: #F4ECE6;
   flex: 1; 
   margin: 0 15px; 
+  padding: 20px;
+  min-width: 100px;
 }
 
-.image-vertical-centre-dinteret img,
-.image-horizontal-centre-dinteret img {
+.image-vertical-centre-dinteret img {
   width: 100%; 
+  max-height: 200px; /* Fixe la hauteur max des images */
   border-radius: 20px;
   border: 2px solid white;
 }
 
-.image-vertical-centre-dinteret img {
-  height: 200px;
+.image-vertical-centre-dinteret > p{
+  color: #000;
+  margin-top: 10px;
 }
-
-.image-horizontal-centre-dinteret img {
-  height: 150px;
-}
-
 
 
 #contact{
@@ -459,20 +438,38 @@ button {
 }
 
 
-
-
 footer{
   display: flex;
   flex-direction:column ;
   align-items:center;
   justify-content: center;
   border-top: 1px solid white;
+  height: 10vh;
 }
 
 
-footer > p, footer > h3{
-  margin: 10px;
+footer > h2{
+  padding: 0;
 }
+
+#button-remonter {
+  position: fixed;      /* Position fixe par rapport à la fenêtre */
+  bottom: 20px;         /* Décalage depuis le bas de la page */
+  right: 20px;          /* Décalage depuis la droite de la page */
+  background-color: #fff; /* Fond blanc */
+  border-radius: 50%;    /* Bordure arrondie (cercle) */
+  padding: 10px;         /* Un peu d'espace autour de l'image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  z-index: 1000;         /* Assure que le bouton est au-dessus des autres éléments */
+}
+
+#button-remonter img {
+  width: 30px; /* Ajuste la taille de l'image */
+  height: 30px; /* Ajuste la taille de l'image */
+}
+
+
+
 
 #projets-button{
   text-align: center;
@@ -497,7 +494,23 @@ footer > p, footer > h3{
   text-align: center;
   padding: 10px;
   border-top: 1px solid white;
+}
 
+#projets-stage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projets-stage > p {
+  width: 50%;
+  margin: 20px;
+}
+
+.all-projet-detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projet-detail {
@@ -505,15 +518,16 @@ footer > p, footer > h3{
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid white;
-  gap: 20px; /* Espace entre l'image et le texte */
   padding: 20px;
+  margin: 15px;
+  width: 75%;
+  background-color: white;
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
 }
 
 .projet-detail > .text-container > h3{
   margin-bottom: 25px;
 }
-
-
 
 .text-container {
   flex: 1; /* Prend l'espace disponible */
@@ -535,6 +549,16 @@ footer > p, footer > h3{
 }
 
 
+.dl-button{
+  background-color: #F4ECE6;
+  margin-top: 10px;
+}
+
+.dl-button > a{
+  text-decoration: none;
+  color: black; /* Couleur du texte dans le bouton */
+}
+
 .media-container {
   flex: 1; /* Prend l'espace disponible */
   display: flex;
@@ -548,19 +572,12 @@ footer > p, footer > h3{
   max-height: 500px; /* S'assure que l'image ne dépasse pas son conteneur */
   height: auto; /* Garde les proportions de l'image */
   object-fit: cover; /* Ajuste l'image si nécessaire */
-  margin-bottom: 10px; /* Ajoute un espace entre l'image et le bouton */
-}
-
-
-
-.media-container > button > a{
-  text-decoration: none;
-  color: black; /* Couleur du texte dans le bouton */
 }
 
 
 .page-centre-dinteret{
   display: flex;
+  height: 79vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -572,11 +589,112 @@ footer > p, footer > h3{
 }
 
 
-.centre-dinteret-text{
+.centre-dinteret-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 90%; /* Largeur par défaut */
+  max-width: 800px; /* Largeur maximale sur grands écrans */
   text-align: justify;
-  margin: 25px;
+  margin: 25px auto; /* Centrer avec margin auto */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.centre-dinteret-text p {
+  line-height: 1.6; /* Meilleure lisibilité */
+  max-width: 700px; /* Limiter la longueur des lignes */
+}
+
+
+#centre-dinteret-img > img{
+  width: 30%;
+
+}
+
+
+
+@media screen and (max-width:1024px) {
+  .text-presentation {
+    width: 50%; /* Le texte occupe plus d'espace sur petits écrans */
+    right: 5%; /* Rapproche encore plus le texte du bord droit */
+    font-size: 1rem; /* Réduit la taille du texte */
+  }
+  
+  header{
+    padding:10px;
+  }
+
+  h1{
+    margin: 0;
+    font-size: 1.25em;
+  }
+
+  h2{
+    font-size: 1em;
+  }
+
+  .bouton-header > a > h3{
+    font-size: 0.85em;
+  }
+  
+  .nav-header {
+    gap: 10px; /* Réduit l'espacement entre les boutons */
+  }
+
+  .oval{
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  h2{
+    text-align: center;
+    padding: 15px 15px 0 15px;
+  }
+  
+  .centre-dinteret-text {
+    font-size: 16px;
+    width: 90%;
+    margin: 0;
+  }
+
+  .centre-dinteret-images{
+    flex-wrap: wrap;
+  }
+
+  .image-vertical-centre-dinteret{
+    margin: 15px;
+  }
+
+  #presentation-image{
+    width: 30%;
+  }
+
+
+
+  #button-remonter{
+    right: 10px;
+  }
+
+  #button-remonter img {
+    width: 20px; 
+    height: 20px; 
+  }
+
+  #reseaux-sociaux > img{
+    width: 20px;
+    margin: 0 5px 0 5px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .centre-dinteret-text {
+    font-size: 14px;
+    width: 100%;
+  }
 }

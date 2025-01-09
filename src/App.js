@@ -6,6 +6,7 @@ import Index from './pages/Index'; // Assurez-vous que le chemin est correct
 import Etudes from './pages/Etudes';
 import Competences from './pages/Competences';
 import Projets from './pages/Projets';
+import ProjetsStage from './pages/ProjetsStage';
 import CentreDinteret1 from './pages/CentreDinteret1';
 import CentreDinteret2 from './pages/CentreDinteret2';
 import CentreDinteret3 from './pages/CentreDinteret3';
@@ -22,7 +23,8 @@ function App() {
         {/* Route vers une autre page */}
         <Route path="/etudes" element={<Etudes />} />
         <Route path="/competences" element={<Competences />} />
-        <Route path="/projets" element={<Projets />} />
+        <Route path="/projets/etude" element={<Projets />} />
+        <Route path="/projets/stage" element={<ProjetsStage />} />
         <Route path="/CentreDinteret1" element={<CentreDinteret1 />} />
         <Route path="/CentreDinteret2" element={<CentreDinteret2 />} />
         <Route path="/CentreDinteret3" element={<CentreDinteret3 />} />

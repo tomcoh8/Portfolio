@@ -6,6 +6,9 @@ import ProjetDetail from '../components/ProjetDetail';
 function Projets() {
   return (
     <div>
+      <a id='button-remonter' href='#'>
+        <img src="../../fleche.png" alt="" />
+      </a>
       <ProjetButton />
       <div id="annee1" className='projets-section'>
         <h1>1ère année</h1>
