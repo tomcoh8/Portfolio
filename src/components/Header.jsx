@@ -26,14 +26,14 @@ export default function Header() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <BoutonHeader txt="PROJETS" link="/projets" />
+          <BoutonHeader txt="PROJETS" />
           {isSubmenuVisible && (
             <div className="submenu">
               <Link to="/projets/etude" className="submenu-item">
-                Projet 1
+                BUT
               </Link>
-              <Link to="/projets/projet2" className="submenu-item">
-                Projet 2
+              <Link to="/projets/stage" className="submenu-item">
+                Stage
               </Link>
             </div>
           )}

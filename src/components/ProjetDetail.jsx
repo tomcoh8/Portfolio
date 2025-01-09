@@ -1,7 +1,7 @@
 import React from 'react';
 import Carrousel from './Carrousel';
 
-export default function ProjetDetail({ title, txt, media, dlButton }) {
+export default function ProjetDetail({ title, txt, media, dlButton, langages }) {
   // Vérifie si le fichier est un MP4
   const isMp4 = (file) => file.endsWith('.mp4');
 
@@ -10,6 +10,13 @@ export default function ProjetDetail({ title, txt, media, dlButton }) {
       <div id="projet-detail" className="projet-detail">
         <div className="text-container">
           <h2>{title}</h2>
+          <div className='projet-langages'>
+            {langages.map((element, index) => (
+              <div key={index} className="language-item">
+                {element}
+              </div>
+            ))}
+          </div>
           <p>{txt}</p>
           {dlButton != "false" && (
             <button className="dl-button">
@@ -21,7 +28,7 @@ export default function ProjetDetail({ title, txt, media, dlButton }) {
         </div>
         <div className="media-container">
           {isMp4(media) ? (
-            <video controls width="600">
+            <video className='projet-video' controls width="600">
               <source src={media} type="video/mp4" />
               Votre navigateur ne supporte pas la lecture de vidéos.
             </video>
