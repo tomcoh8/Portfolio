@@ -1,13 +1,13 @@
 import React from 'react';
 import Carrousel from './Carrousel';
 
-export default function ProjetDetail({ title, txt, media, dlButton, langages }) {
+export default function ProjetDetail({id, title, txt, media, dlButton, dlDossier, langages, lienCompetence}) {
   // Vérifie si le fichier est un MP4
   const isMp4 = (file) => file.endsWith('.mp4');
 
   return (
     <div className='all-projet-detail'>
-      <div id="projet-detail" className="projet-detail">
+      <div id={id} className="projet-detail">
         <div className="text-container">
           <h2>{title}</h2>
           <div className='projet-langages'>
@@ -17,10 +17,10 @@ export default function ProjetDetail({ title, txt, media, dlButton, langages }) 
               </div>
             ))}
           </div>
-          <p>{txt}</p>
+          <p>{txt} <a className='link-competences' href="/competences">{lienCompetence}</a></p>
           {dlButton != "false" && (
             <button className="dl-button">
-              <a href={media} download>
+              <a href={dlDossier} download>
                 Télécharger
               </a>
             </button>
@@ -33,7 +33,7 @@ export default function ProjetDetail({ title, txt, media, dlButton, langages }) 
               Votre navigateur ne supporte pas la lecture de vidéos.
             </video>
           ) : (
-            <img src={media} alt={title} />
+            <img src={media} alt="Aucun visuel" />
           )}        
         </div>
 

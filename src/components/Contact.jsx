@@ -29,9 +29,10 @@ export default function ContactForm() {
       <div id="contact">
 
         <div id='infos-contact'>
-          <p>tom.coheleach8@gmail.com</p>
-          <a href="https://www.linkedin.com/in/tom-coheleach-3284a0264">Tom Coheleach</a>
-          <a href="../../mon cv.pdf">mon CV ici</a>
+          <a href="mailto:tom.cohelech8@gmail.com."><img src="../../mail.png" alt="" width="30vh"/>tom.coheleach8@gmail.com</a>
+
+          <a href="https://www.linkedin.com/in/tom-coheleach-3284a0264"><img src="../../logo linkedin.png" alt="" width="30vh"/>Tom Coheleach</a>
+          <a href="../../mon cv.pdf"><img src="../../logo-cv.png" alt="" width="30vh"/>mon CV ici</a>
         </div>
         <div id='contactez-moi'>
 

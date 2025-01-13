@@ -21,7 +21,7 @@ function App() {
         {/* Route vers la page d'accueil */}
         <Route path="/" element={<Index />} />
         {/* Route vers une autre page */}
-        <Route path="/etudes" element={<Etudes />} />
+        <Route path="/apropos" element={<Etudes />} />
         <Route path="/competences" element={<Competences />} />
         <Route path="/projets/etude" element={<Projets />} />
         <Route path="/projets/stage" element={<ProjetsStage />} />

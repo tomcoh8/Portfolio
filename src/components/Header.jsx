@@ -18,7 +18,7 @@ export default function Header() {
       </div>
 
       <nav className="nav-header">
-        <BoutonHeader txt="ETUDES" link="/etudes" />
+        <BoutonHeader txt="A PROPOS" link="/apropos"/>
         <BoutonHeader txt="COMPETENCES" link="/competences" />
 
         <div
